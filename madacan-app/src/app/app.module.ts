@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { HomeComponent } from './application/home/home.component';
-import { RegisterComponent } from './application/register/register.component';
+import { RegisterComponent } from './application/modal/register/register.component';
 import { ConnexionComponent } from './application/connexion/connexion.component';
 import { FormationComponent } from './application/formation/formation.component';
 import { DoingComponent } from './application/doing/doing.component';

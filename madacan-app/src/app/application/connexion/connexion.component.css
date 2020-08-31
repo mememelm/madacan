@@ -1,0 +1,11 @@
+.card-connexion {
+    margin-top: 160px;
+    width: auto;
+    max-height: 250px;
+}
+
+.btn-connexion {
+    display: block;
+    background-color: #007E3A;
+    color: white!important 
+}

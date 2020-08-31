@@ -5,6 +5,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { HomeComponent } from './application/home/home.component';
+import { RegisterComponent } from './application/register/register.component';
+import { ConnexionComponent } from './application/connexion/connexion.component';
+import { FormationComponent } from './application/formation/formation.component';
+import { DoingComponent } from './application/doing/doing.component';
+import { ExerciseComponent } from './application/exercise/exercise.component';
+import { TestComponent } from './application/test/test.component';
+import { SupportComponent } from './application/modal/support/support.component';
+
 import { A11yModule } from '@angular/cdk/a11y';
 import { ClipboardModule } from '@angular/cdk/clipboard';
 import { DragDropModule } from '@angular/cdk/drag-drop';
@@ -50,7 +59,15 @@ import { MatTreeModule } from '@angular/material/tree';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    RegisterComponent,
+    ConnexionComponent,
+    FormationComponent,
+    DoingComponent,
+    ExerciseComponent,
+    TestComponent,
+    SupportComponent
   ],
   imports: [
     BrowserModule,

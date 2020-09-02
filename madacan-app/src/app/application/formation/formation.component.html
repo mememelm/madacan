@@ -1,3 +1,237 @@
 <div class="content">
-    
+    <mat-toolbar class="mat-elevation-z8 animate__animated animate__fadeInDown" style="background-color: white;">
+        <div class="col-sm-4">
+            <img src="../../../assets/images/madacan.PNG">
+        </div>
+        <div class="col-sm-4" style="text-align: center;">
+            <span>Bonjour Mr RAKOTO</span>
+        </div>
+        <div class="col-sm-4">
+            <span style="float: right;" class="color" (click)="logout()">
+                <mat-icon>logout</mat-icon> Déconnexion
+            </span>
+        </div>
+    </mat-toolbar>
+
+    <div class="band animate__animated animate__fadeInLeft mat-elevation-z8">
+        <mat-label class="band-title">FORMATION : LIPSUM</mat-label>
+    </div>
+
+    <div class="doing-title">
+        <div class="row">
+            <div class="col doing-content mat-elevation-z8 animate__animated animate__fadeInUp">
+                <mat-selection-list [multiple]="false">
+                    <mat-list-option (click)="doing1()"> Doing 1 </mat-list-option>
+                    <mat-list-option (click)="doing2()"> Doing 2 </mat-list-option>
+                    <mat-list-option (click)="doing3()"> Doing 3 </mat-list-option>
+                    <mat-list-option> Doing 4 </mat-list-option>
+                    <mat-list-option> Doing 5 </mat-list-option>
+                    <mat-list-option> Doing 6 </mat-list-option>
+                </mat-selection-list>
+            </div>
+            <div class="col exercise-content animate__animated animate__fadeInRight mat-elevation-z8">
+                <div *ngIf="doingOne === false && doingTwo === false && doingThree === false">
+                    <mat-card>
+                        <mat-card-header style="text-align: center;">
+                            Selectionner formation Doing
+                        </mat-card-header>
+                    </mat-card>
+                </div>
+
+                <div *ngIf="doingOne === true">
+                    <mat-card>
+                        <mat-card-header>
+                            <mat-card-title>. Exercice Doing 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                            </mat-card-title>
+                        </mat-card-header>
+                        <mat-card-content>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore mag
+                        </mat-card-content>
+                    </mat-card>
+
+                    <mat-card>
+                        <mat-card-header>
+                            <mat-card-title>. Exercice Doing 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                            </mat-card-title>
+                        </mat-card-header>
+                        <mat-card-content>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. U
+                        </mat-card-content>
+                    </mat-card>
+
+                    <mat-card>
+                        <mat-card-header>
+                            <mat-card-title>. Exercice Doing 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                            </mat-card-title>
+                        </mat-card-header>
+                        <mat-card-content>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                        </mat-card-content>
+                    </mat-card>
+
+                    <mat-card>
+                        <mat-card-header>
+                            <mat-card-title>. Exercice Doing 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                            </mat-card-title>
+                        </mat-card-header>
+                        <mat-card-content>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        </mat-card-content>
+                    </mat-card>
+
+                    <mat-card>
+                        <mat-card-header>
+                            <mat-card-title>. Exercice Doing 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                            </mat-card-title>
+                        </mat-card-header>
+                        <mat-card-content>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        </mat-card-content>
+                    </mat-card>
+                </div>
+
+                <div *ngIf="doingTwo === true">
+                    <mat-card>
+                        <mat-card-header>
+                            <mat-card-title>. Exercice Doing 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                            </mat-card-title>
+
+                        </mat-card-header>
+                        <mat-card-content>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut.
+                        </mat-card-content>
+                    </mat-card>
+
+                    <mat-card>
+                        <mat-card-header>
+                            <mat-card-title>. Exercice Doing 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                            </mat-card-title>
+                        </mat-card-header>
+                        <mat-card-content>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut.
+                        </mat-card-content>
+                    </mat-card>
+
+                    <mat-card>
+                        <mat-card-header>
+                            <mat-card-title>. Exercice Doing 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                            </mat-card-title>
+                        </mat-card-header>
+                        <mat-card-content>
+                            Lorem ipsum dolor sit amet, consectetur am veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut.
+                        </mat-card-content>
+                    </mat-card>
+
+                    <mat-card>
+                        <mat-card-header>
+                            <mat-card-title>. Exercice Doing 2 Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                            </mat-card-title>
+                        </mat-card-header>
+                        <mat-card-content>
+                            Lorem ipsum dolor sit ame
+                        </mat-card-content>
+                    </mat-card>
+
+                    <mat-card>
+                        <mat-card-header>
+                            <mat-card-title>. Exercice Doing Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                            </mat-card-title>
+                        </mat-card-header>
+                        <mat-card-content>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim ve
+                        </mat-card-content>
+                    </mat-card>
+                </div>
+
+                <div class="container" *ngIf="doingThree === true">
+                    <mat-card>
+                        <mat-card-header>
+                            <mat-card-title>. Exercice Doing 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                            </mat-card-title>
+                        </mat-card-header>
+                        <mat-card-content>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut.
+                        </mat-card-content>
+                    </mat-card>
+                    
+                    <mat-card>
+                        <mat-card-header>
+                            <mat-card-title>. Exercice Doing 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                            </mat-card-title>
+                        </mat-card-header>
+                        <mat-card-content>
+                            Lorem ipsum dolor sit amet, consecteturminim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut.
+                        </mat-card-content>
+                    </mat-card>
+
+                    <mat-card>
+                        <mat-card-header>
+                            <mat-card-title>. Exercice Doing 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                            </mat-card-title>
+                        </mat-card-header>
+                        <mat-card-content>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elits nostrud exercitation ullamco
+                            laboris nisi ut.
+                        </mat-card-content>
+                    </mat-card>
+
+                    <mat-card>
+                        <mat-card-header>
+                            <mat-card-title>. Exercice Doing 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                            </mat-card-title>
+                        </mat-card-header>
+                        <mat-card-content>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, q
+                        </mat-card-content>
+                    </mat-card>
+
+                    <mat-card>
+                        <mat-card-header>
+                            <mat-card-title>. Exercice Doing 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                            </mat-card-title>
+                        </mat-card-header>
+                        <mat-card-content>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut.
+                        </mat-card-content>
+                    </mat-card>
+                    <mat-card>
+                        <mat-card-header>
+                            <mat-card-title>. Exercice Doing 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                            </mat-card-title>
+                        </mat-card-header>
+                        <mat-card-content>
+                            Lorem ipsum dolor sit amet, consecteturminim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut.
+                        </mat-card-content>
+                    </mat-card>
+                    <mat-card>
+                        <mat-card-header>
+                            <mat-card-title>. Exercice Doing 3 Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                            </mat-card-title>
+                        </mat-card-header>
+                        <mat-card-content>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elits nostrud exercitation ullamco
+                            laboris nisi ut.
+                        </mat-card-content>
+                    </mat-card>
+                </div>
+
+            </div>
+        </div>
+    </div>
 </div>

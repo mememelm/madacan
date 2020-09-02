@@ -1,16 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: Arial, Helvetica, sans-serif; }
 
-/* base color #007E3A */
+/* base color #44b649 #007E3A */
 
-.icon {
-    color: #007E3A;
+.color {
+    color: #44b649;
 }
 
 .content {
-    background-color: #007E3A;
-    width: 100%;  
+    background: url('./assets/images/bg.png');
+    width: 100%;
     height: 100%;
+}
+
+.btn-ok {
+    background-color: #44b649;
+    color: white!important 
+}
+
+.btn-ok :hover {
+    background-color: #007E3A;
+    color: white;
+}
+
+.text-content {
+    color: #44b649;
 }

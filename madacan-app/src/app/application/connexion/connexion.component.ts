@@ -16,5 +16,4 @@ export class ConnexionComponent implements OnInit {
   public connexion() {
     this.router.navigateByUrl('formation')
   }
-
 }

@@ -8,35 +8,9 @@ import { Router } from '@angular/router';
 })
 export class FormationComponent implements OnInit {
 
-  doingOne: boolean
-  doingTwo: boolean
-  doingThree: boolean
-
-  constructor(private router: Router) {
-    this.doingOne = false
-    this.doingTwo = false
-    this.doingThree = false
-  }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
-  }
-
-  public doing1() {
-    this.doingOne = true
-    this.doingTwo = false
-    this.doingThree = false
-  }
-
-  public doing2() {
-    this.doingTwo = true
-    this.doingOne = false
-    this.doingThree = false
-  }
-
-  public doing3() {
-    this.doingTwo = false
-    this.doingThree = true
-    this.doingOne = false
   }
 
   logout() {

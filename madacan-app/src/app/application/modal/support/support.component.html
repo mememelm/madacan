@@ -1,1 +1,9 @@
-<p>support works!</p>
+<div mat-dialog-content>
+    <mat-video title="Vidéo test" [autoplay]="true" [preload]="true" [fullscreen]="true" [download]="false">
+        <source matVideoSource src="../../../assets/data/test.mp4" type="video/mp4">
+    </mat-video>
+</div>
+
+<div mat-dialog-actions>
+    <button mat-button mat-dialog-close class="btn-ok">Fermer la vidéo</button>
+</div>

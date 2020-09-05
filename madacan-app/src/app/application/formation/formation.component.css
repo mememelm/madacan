@@ -1,35 +1,24 @@
-.band {
-    background-color: #007E3A; 
-    width: 100%;
-    height: 100px; 
-    margin-top: 15px;
-}
-
-.band-title {
-    color: white;
+.menu-band {
+    color: #007E3A;
     font-weight: bold;
-    font-size: 40px;
-    margin-left: 50px;
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+    font-size: 20px;
+    margin: 0 0 0 15px;
 }
 
-.doing-title {
-    margin-left: 50px;
-    margin-top: 15px;
-    border-radius: 25px;
+.menu-band :hover{
+    margin-left: 15px;
 }
 
-.doing-content {
-    max-width: 350px;
-    height: 100%;
+.menu-content {
+    width: 300px;
     background-color: white;
+    border-radius: 15px;
 }
 
-.exercise-content {
-    margin-right: 50px;
-    height: 100%;
-    margin-left: 25px;
+.menu-div {
+    margin: 10px 10px 10px 10px; 
+}
+
+.menu-div :hover {
+    color: #E63221
 }

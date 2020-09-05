@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { HomeComponent } from './application/home/home.component';
-import { RegisterComponent } from './application/modal/register/register.component';
 import { ConnexionComponent } from './application/connexion/connexion.component';
 import { FormationComponent } from './application/formation/formation.component';
 import { DoingComponent } from './application/doing/doing.component';
 import { ExerciseComponent } from './application/exercise/exercise.component';
 import { TestComponent } from './application/test/test.component';
 import { SupportComponent } from './application/modal/support/support.component';
+import { HeaderComponent } from './application/header/header.component';
+import { LessonComponent } from './application/lesson/lesson.component';
+import { EvaluationComponent } from "./application/modal/evaluation/evaluation.component";
 
 import { A11yModule } from '@angular/cdk/a11y';
 import { ClipboardModule } from '@angular/cdk/clipboard';
@@ -62,13 +64,15 @@ import { MatDialogConfig } from "@angular/material/dialog";
   declarations: [
     AppComponent,
     HomeComponent,
-    RegisterComponent,
     ConnexionComponent,
     FormationComponent,
     DoingComponent,
     ExerciseComponent,
     TestComponent,
-    SupportComponent
+    SupportComponent,
+    HeaderComponent,
+    LessonComponent,
+    EvaluationComponent
   ],
   imports: [
     BrowserModule,

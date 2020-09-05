@@ -28,3 +28,32 @@ body { margin: 0; font-family: Arial, Helvetica, sans-serif; }
 .text-content {
     color: #007E3A;
 }
+
+.band {
+    background-color: #007E3A; 
+    width: 100%;
+    height: 100px; 
+    margin-top: 15px;
+}
+
+.band-title {
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    margin: 0 0 0 50px;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.doing-title {
+    margin: 15px 0 0 50px;
+    border-radius: 25px;
+}
+
+.doing-content {
+    max-width: 350px;
+    height: 100%;
+    background-color: white;
+}

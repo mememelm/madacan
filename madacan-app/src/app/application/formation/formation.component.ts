@@ -8,12 +8,23 @@ import { Router } from '@angular/router';
 })
 export class FormationComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(
+    private router: Router,
+  ) { }
 
   ngOnInit(): void {
   }
 
+  exerciseRoute() {
+    this.router.navigateByUrl('exercise')
+  }
+
+  lessonRoute() {
+    this.router.navigateByUrl('lesson')
+  }
+
   logout() {
+    sessionStorage.clear()
     this.router.navigateByUrl('connexion')
   }
 }

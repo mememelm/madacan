@@ -16,6 +16,9 @@ import { HeaderComponent } from './application/header/header.component';
 import { LessonComponent } from './application/lesson/lesson.component';
 import { EvaluationComponent } from "./application/modal/evaluation/evaluation.component";
 
+import { MatVideoModule } from 'mat-video';
+
+// mat import
 import { A11yModule } from '@angular/cdk/a11y';
 import { ClipboardModule } from '@angular/cdk/clipboard';
 import { DragDropModule } from '@angular/cdk/drag-drop';
@@ -78,6 +81,9 @@ import { MatDialogConfig } from "@angular/material/dialog";
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    MatVideoModule,
+
+    // mat
     A11yModule,
     ClipboardModule,
     CdkStepperModule,
